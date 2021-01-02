@@ -9,6 +9,7 @@ def get_polar_coord(x1, y1, length, angle):
     x2 = length * math.cos(angle % (2 * math.pi))
     y2 = length * math.sin(angle % (2 * math.pi))
 
+    # its - because its from top to bottom unlike a normal graph
     return (x2 + x1, y1 - y2)
 
 def get_angle(x1, y1, x2, y2):

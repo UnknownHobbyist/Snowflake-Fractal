@@ -26,7 +26,6 @@ def main():
 
 
     cvs.ctx.create_line((cvs.width - START_LENGTH) / 2, cvs.height / 2 + 200,  cvs.width - (cvs.width - START_LENGTH) / 2, cvs.height / 2 + 200, fill="#fff", width=0.5)
-    #cvs.ctx.create_line((cvs.width - start_length) / 2, cvs.height / 2 + 10, cvs.width - (cvs.width - start_length) / 2, cvs.height / 2 + 10, fill="#fff", width=0.5)
 
     request_animaion_frame()
 
@@ -35,7 +34,7 @@ def main():
 def request_animaion_frame():
 
     global STEP
-    #cvs.ctx.delete("all")
+    # cvs.ctx.delete("all")
 
     objects = list(cvs.ctx.find_all())
 
@@ -81,4 +80,3 @@ def request_animaion_frame():
 
 if __name__ == "__main__":
     main()
-    
